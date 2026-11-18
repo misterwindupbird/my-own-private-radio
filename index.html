@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Own Private Radio — Support</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="icon.png">
+</head>
+<body>
+<header><div class="wrap">
+  <img src="icon.png" alt="">
+  <div>
+    <h1>My Own Private Radio</h1>
+    <p>Your NotebookLM Audio Overviews, as a private podcast.</p>
+    <nav><a href="./">Support</a><a href="privacy.html">Privacy Policy</a></nav>
+  </div>
+</div></header>
+<main class="wrap">
+  <div class="card">
+    <strong>Need help?</strong> Open an issue at
+    <a href="https://github.com/misterwindupbird/my-own-private-radio/issues">github.com/misterwindupbird/my-own-private-radio/issues</a>.
+    Describe what you expected and what happened. Please don’t include your feed address, keys or passwords: anyone who has a feed address can listen to it.
+  </div>
+
+  <h2>Getting started</h2>
+  <ol>
+    <li><strong>Sign in to NotebookLM</strong> in the app with the Google account you use for NotebookLM. If Google offers a passkey, choose “Try another way”: passkeys don’t work inside apps.</li>
+    <li><strong>Choose storage.</strong> Dropbox is quickest: click Connect Dropbox. Or use S3-compatible storage (Backblaze B2, Cloudflare R2, Amazon S3) with a bucket made for the podcast and public read access.</li>
+    <li><strong>Start publishing.</strong> The feed appears with a short welcome episode. Click Subscribe, or scan the QR code with your phone.</li>
+  </ol>
+
+  <h2>Common questions</h2>
+  <h3>A new Audio Overview hasn’t appeared yet</h3>
+  <p>The app checks NotebookLM every 15 minutes while it’s running (you can change this in Settings › General), and ⌘R checks now. Only finished Audio Overviews are published. Overcast is told about new episodes at once; Apple Podcasts checks feeds on its own schedule, usually within a few hours.</p>
+  <h3>The app says to sign in again</h3>
+  <p>Google sometimes ends sessions. Click Sign In and sign in again; anything already saved keeps publishing meanwhile.</p>
+  <h3>Can I move my podcast to other storage?</h3>
+  <p>Yes. Change it in Settings › Storage and the app moves every episode, then tells podcast apps the new address so subscribers follow automatically.</p>
+  <h3>Is my podcast private?</h3>
+  <p>By default the feed has an unlisted address and asks directories not to list it. That isn’t a password: anyone you give the address to can listen. You can make a feed public in Settings › Sharing.</p>
+  <h3>Dropbox links stopped working</h3>
+  <p>Dropbox Basic allows 20 GB of downloads a day across your shared links and pauses them for a day if that’s exceeded. Paid Dropbox plans allow far more, or move the podcast to S3-compatible storage.</p>
+</main>
+<footer><div class="wrap">
+  My Own Private Radio is an independent app and is not affiliated with or endorsed by Google or Dropbox. NotebookLM is a trademark of Google LLC.
+</div></footer>
+</body>
+</html>
